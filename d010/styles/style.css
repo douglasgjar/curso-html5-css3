@@ -30,8 +30,9 @@ body{
 }
 
 header {
-    padding: 0.5em;
-    height: 10em;;
+    text-align: center;
+    padding: 1em;
+    height: 11em;;
     width: 100%;
     background-image: linear-gradient(var(--cor-secundaria), var(--cor-principal));
     color: var(--cor-quartenaria);
@@ -39,14 +40,13 @@ header {
 }
 
 #cabecalho-titulo {
-    text-align: center;
     padding: 0.5em 0 0;
     text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
+    font-size: 2em;
     font-weight: bold;
 }
 
 #cabecalho-subtitulo {
-    text-align: center;
     padding: 1.5em;
     text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
 }
@@ -59,6 +59,7 @@ header {
 
 .cabecalho-menu-links {
     color: var(--cor-quartenaria);
+    padding: 0.5em;
     font-weight: bold;
     font-size:0.8em;
     text-shadow: 2px 2px 2px rgba(0, 100, 0, 0.344);
@@ -66,23 +67,23 @@ header {
 }
 
 .cabecalho-menu-links:hover {
+    background-color: var(--cor-secundaria);
+    
     color: var(--cor-quintenaria);
 }
 
 main {
+    min-width: 300px;    
+    max-width: 1000px;
     margin: auto auto 1.5em;
-    display: flex;
-    flex-direction: column;
     background-color: var(--cor-quartenaria);
-    box-shadow: 0 5px 10px rgba(0, 100, 0, 0.726);
-    min-width: none;
-    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 100, 0, 0.726);
+    padding: 1.5em 1.5em 0;
+    border-radius: 0 0 10px 10px;
 }
 
-#home-principal{
-    box-sizing: border-box;
+main img {
     width: 100%;
-    padding: 1.5em 1.5em 0;
 }
 
 #home-principal-titulo {
@@ -118,14 +119,9 @@ main {
     text-decoration: underline;
 }
 
-.imagem {
-    box-sizing: content-box;
-    width: 100%;
-}
-
-#imagem {
-    margin: auto;
+#imagem_pequena {
     display: block;
+    margin: auto;
     width: 50%;
 }
 
